@@ -8,7 +8,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -std=c++17")
 
 add_compile_definitions(GLEW_STATIC)
 
-set(TUTORIAL "02_shaders")
+set(TUTORIAL "03_vertex_buffer_objects")
+
 file(GLOB CPP_FILES src/${TUTORIAL}/*.cpp src/${TUTORIAL}/*.c)
 
 add_executable(main ${CPP_FILES})
