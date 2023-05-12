@@ -14,6 +14,11 @@ file(GLOB CPP_FILES src/${TUTORIAL}/*.cpp src/${TUTORIAL}/*.c)
 
 add_executable(main ${CPP_FILES})
 
-include_directories(${PROJECT_SOURCE_DIR}/include ${PROJECT_SOURCE_DIR}/src ${PROJECT_SOURCE_DIR}/src/vendor)
+include_directories(${PROJECT_SOURCE_DIR}/include ${PROJECT_SOURCE_DIR}/vendor)
 
-target_link_libraries(main glfw3 opengl32 glew32s.lib)
+file(GLOB math_source ${PROJECT_SOURCE_DIR}/vendor/maths_funcs.cpp ${PROJECT_SOURCE_DIR}/vendor/maths_funcs.h)
+file(GLOB utils_source ${PROJECT_SOURCE_DIR}/vendor/gl_utils.cpp ${PROJECT_SOURCE_DIR}/vendor/gl_utils.h)
+add_library(math OBJECT ${math_source})
+add_library(utils OBJECT ${utils_source})
+
+target_link_libraries(main glfw3 opengl32 glew32s.lib math utils)
