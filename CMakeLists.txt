@@ -8,8 +8,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -std=c++17")
 
 add_compile_definitions(GLEW_STATIC)
 
-set(TUTORIAL "00_hello_triangle")
-file(GLOB CPP_FILES src/${TUTORIAL}/*.cpp)
+set(TUTORIAL "01_extended_init")
+file(GLOB CPP_FILES src/${TUTORIAL}/*.cpp src/${TUTORIAL}/*.c)
 
 add_executable(main ${CPP_FILES})
 
