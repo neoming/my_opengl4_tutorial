@@ -1,4 +1,3 @@
 build/
-include/glad
-include/KHR
-src/glad.c
+
+gl.log

@@ -198,8 +198,8 @@ int main() {
 
   /* load shaders from files here */
 
-  parse_file_into_str( "../src/02_shaders/test_vs.glsl", vertex_shader, 1024 * 256 );
-  parse_file_into_str( "../src/02_shaders/test_fs.glsl", fragment_shader, 1024 * 256 );
+  parse_file_into_str( "src/02_shaders/test_vs.glsl", vertex_shader, 1024 * 256 );
+  parse_file_into_str( "src/02_shaders/test_fs.glsl", fragment_shader, 1024 * 256 );
 
   vs = glCreateShader( GL_VERTEX_SHADER );
   p  = (const GLchar*)vertex_shader;
