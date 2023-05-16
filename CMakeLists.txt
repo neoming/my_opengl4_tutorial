@@ -19,9 +19,10 @@ set(TUTORIAL6 "06_vcam_with_quaternion")
 set(TUTORIAL7 "07_ray_picking")
 set(TUTORIAL8 "08_phong")
 set(TUTORIAL9 "09_texture_mapping")
+set(TUTORIAL10 "10_screen_capture")
 set(TUTORIAL22 "22_geom_shaders")
 
-set(TUTORIAL ${TUTORIAL9})
+set(TUTORIAL ${TUTORIAL10})
 
 file(GLOB CPP_FILES src/${TUTORIAL}/*.cpp src/${TUTORIAL}/*.c src/${TUTORIAL}/*.h)
 
