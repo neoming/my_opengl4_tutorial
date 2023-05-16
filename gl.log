@@ -1,4 +1,11 @@
-GL_LOG_FILE log. local time Tue May 16 11:19:46 2023
+GL_LOG_FILE log. local time Tue May 16 14:08:05 2023
 
-starting GLFW 3.3.8 Win32 WGL EGL OSMesa MinGWrenderer: Intel(R) UHD Graphics 770
+starting GLFW 3.3.8 Win32 WGL EGL OSMesa MinGW
+renderer: Intel(R) UHD Graphics 770
 version: 4.1.0 - Build 30.0.101.2079
+creating shader from src/06_vcam_with_quaternion/test_vs.glsl...
+shader compiled. index 1
+creating shader from src/06_vcam_with_quaternion/test_fs.glsl...
+shader compiled. index 2
+created programme 3. attaching shaders 1 and 2...
+program 3 GL_VALIDATE_STATUS = GL_TRUE
