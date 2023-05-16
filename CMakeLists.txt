@@ -20,9 +20,10 @@ set(TUTORIAL7 "07_ray_picking")
 set(TUTORIAL8 "08_phong")
 set(TUTORIAL9 "09_texture_mapping")
 set(TUTORIAL10 "10_screen_capture")
+set(TUTORIAL11 "11_video_capture")
 set(TUTORIAL22 "22_geom_shaders")
 
-set(TUTORIAL ${TUTORIAL10})
+set(TUTORIAL ${TUTORIAL11})
 
 file(GLOB CPP_FILES src/${TUTORIAL}/*.cpp src/${TUTORIAL}/*.c src/${TUTORIAL}/*.h)
 
