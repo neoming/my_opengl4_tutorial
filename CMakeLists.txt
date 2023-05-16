@@ -17,8 +17,9 @@ set(TUTORIAL4 "04_mat_and_vec")
 set(TUTORIAL5 "05_virtual_camera")
 set(TUTORIAL6 "06_vcam_with_quaternion")
 set(TUTORIAL7 "07_ray_picking")
+set(TUTORIAL8 "08_phong")
 
-set(TUTORIAL ${TUTORIAL7})
+set(TUTORIAL ${TUTORIAL8})
 
 file(GLOB CPP_FILES src/${TUTORIAL}/*.cpp src/${TUTORIAL}/*.c src/${TUTORIAL}/*.h)
 
