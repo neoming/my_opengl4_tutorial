@@ -8,19 +8,22 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -std=c++17")
 
 add_compile_definitions(GLEW_STATIC)
 
-set(TUTORIAL "06_vcam_with_quaternion")
+## stutorial source path
+set(TUTORIAL0 "00_hello_trangle")
+set(TUTORIAL1 "01_extended_init")
+set(TUTORIAL2 "02_shaders")
+set(TUTORIAL3 "03_vertex_buffer_objects")
+set(TUTORIAL4 "04_mat_and_vec")
+set(TUTORIAL5 "05_virtual_camera")
+set(TUTORIAL6 "06_vcam_with_quaternion")
+set(TUTORIAL7 "07_ray_picking")
 
-file(GLOB CPP_FILES src/${TUTORIAL}/*.cpp src/${TUTORIAL}/*.c)
+set(TUTORIAL ${TUTORIAL7})
+
+file(GLOB CPP_FILES src/${TUTORIAL}/*.cpp src/${TUTORIAL}/*.c src/${TUTORIAL}/*.h)
 
 add_executable(main ${CPP_FILES})
 
 include_directories(${PROJECT_SOURCE_DIR}/include ${PROJECT_SOURCE_DIR}/vendor)
 
-file(GLOB math_source ${PROJECT_SOURCE_DIR}/vendor/maths_funcs.cpp ${PROJECT_SOURCE_DIR}/vendor/maths_funcs.h)
-file(GLOB utils_source ${PROJECT_SOURCE_DIR}/vendor/gl_utils.cpp ${PROJECT_SOURCE_DIR}/vendor/gl_utils.h)
-file(GLOB obj_source ${PROJECT_SOURCE_DIR}/vendor/obj_parser.cpp ${PROJECT_SOURCE_DIR}/vendor/obj_parser.h)
-add_library(math OBJECT ${math_source})
-add_library(utils OBJECT ${utils_source})
-add_library(obj OBJECT ${obj_source})
-
-target_link_libraries(main glfw3 opengl32 glew32s.lib math utils obj)
+target_link_libraries(main glfw3 opengl32 glew32s.lib)
