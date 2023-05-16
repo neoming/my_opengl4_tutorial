@@ -8,7 +8,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -std=c++17")
 
 add_compile_definitions(GLEW_STATIC)
 
-set(TUTORIAL "04_mat_and_vec")
+set(TUTORIAL "05_virtual_camera")
 
 file(GLOB CPP_FILES src/${TUTORIAL}/*.cpp src/${TUTORIAL}/*.c)
 
